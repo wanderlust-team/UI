@@ -2,6 +2,7 @@
 @import "../javascript/carousel.less";
 @import "variables.less";
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,22 +49,17 @@
           font-size: 18px;
           text-decoration: none;
           color: black;
-      
       }
   }
-
 }
-
-// .title {
-//   position: absolute;
-//   left: 37%;
-//   top: 30%;
-//   font-size: 100px;
-// }
 
 .picture-content {
   position: relative;
   display: inline-block;
+  .firstPic {
+    width: 100%;
+    margin: auto;
+  }
   .title{
     position: absolute;
     top: 40%;
@@ -93,19 +89,6 @@
 
   }
 }
-
-
-// .button {
-//   position: absolute;
-//   left: 48%;
-//   top: 45%;
-//   font-size: 25px;
-//   border-radius: 15px;
-//   cursor: pointer;
-//   color: white;
-//   border: 3px solid white;
-//   padding: 10px;
-// }
 
 .content-section {
   margin: 30px 0;
@@ -168,10 +151,6 @@
   }
 }
 
-.firstPic {
-  width: 100%;
-  height: auto;
-}
 
 
 body {
@@ -181,6 +160,12 @@ body {
 }
 
 .footer{
+  display: flex;
 	background-color: lightslategray;
   height: 50px;
+  align-items: center;
+  justify-content: center;
+  p{
+    margin: 0;
+  }
 }

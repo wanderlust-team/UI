@@ -14,6 +14,12 @@
   margin: auto;
   width: 100%;
 }
+.carousel-control-prev-icon {
+  background-color: lightslategray;
+}
+.carousel-control-next-icon {
+  background-color: lightslategray;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,6 +70,10 @@
 .picture-content {
   position: relative;
   display: inline-block;
+}
+.picture-content .firstPic {
+  width: 100%;
+  margin: auto;
 }
 .picture-content .title {
   position: absolute;
@@ -156,16 +166,18 @@
     order: 2;
   }
 }
-.firstPic {
-  width: 100%;
-  height: auto;
-}
 body {
   box-sizing: border-box;
   min-width: 300px;
   margin: 0;
 }
 .footer {
+  display: flex;
   background-color: lightslategray;
   height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  margin: 0;
 }
