@@ -3,56 +3,66 @@
 @import "variables.less";
 
 
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  text-shadow: 4px 4px 8px black
+}
 
 .container {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
-
+//nav bar
 .header-container {
-	max-width: 1300px;
+	max-width: 1238px;
   width: 100%;
   background: white;
 	margin: 0 auto;
   margin-bottom: 20px;
-  
-
-.nav-content {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media @mobile {
+  .nav-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media @mobile {
       flex-wrap: wrap;
       justify-content: center;
       padding-top: 10px;
-  }
-  }
-  .navigation {
+    }
+    .navigation {
       width: 1300px;
       display: flex;
       justify-content: flex-end;
       
+      
       @media @mobile {
-          justify-content: space-evenly;
-          width: 100%;
-          margin: 0 auto;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0 auto;
       }
       a {
-          font-size: 18px;
-          text-decoration: none;
-          color: black;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
       }
+    }
   }
 }
-
+//header
 .picture-content {
   position: relative;
   display: inline-block;
@@ -69,6 +79,9 @@
     text-align: center;
     color: black;
     font-weight: bold;
+    @media @mobile {
+      font-size: 50px;
+    }
   }
   .button {
     position: absolute;
@@ -85,18 +98,16 @@
     border-radius: 10px;
     @media @mobile {
       top: 65%;
+      font-size: 20px;
     }
-
   }
 }
-
+//main content
 .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-
-
   .text-content {
     width: 43%;
     height: auto;
@@ -115,7 +126,6 @@
       width: 100%;
       padding: 0;
     }
-
     img {
       border-radius: 10px;
       width: 100%;
@@ -131,7 +141,6 @@
 .inverse-content {
   justify-content: space-between;
 
-
   .text-content {
     padding-left: 2%;
     padding-right: 0;
@@ -139,7 +148,6 @@
       order: 1;
     }
   }
-
   .img-content {
     padding-right: 1%;
     padding-left: 0;
@@ -151,14 +159,7 @@
   }
 }
 
-
-
-body {
-  box-sizing: border-box;
-  min-width: 300px;
-  margin: 0;
-}
-
+//footer
 .footer{
   display: flex;
 	background-color: lightslategray;
