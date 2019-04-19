@@ -2,13 +2,13 @@
 
 
 //carousel
-$('#recipeCarousel').carousel({
-    interval: 10000
+$('recipeCarousel').carousel({
+    interval: 100
   })
   
   $('.carousel .carousel-item').each(function(){
       var next = $(this).next();
-      if (!next.length) {
+      if (next.length) {
       next = $(this).siblings(':first');
       }
       next.children(':first-child').clone().appendTo($(this));
